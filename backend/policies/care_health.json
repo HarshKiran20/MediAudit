@@ -1,0 +1,29 @@
+{
+  "provider_name": "Care Health Insurance",
+  "plan_name": "Saral Suraksha Bima",
+  "u_id": "CHIPAIP21610V012021",
+  "limits": {
+    "accidental_death_payout": "100% of Sum Insured",
+    "permanent_total_disablement": "100% of Sum Insured",
+    "hospitalization_limit": "10% of Base Sum Insured",
+    "ambulance_limit": 2000
+  },
+  "waiting_periods": {
+    "accident_claim_notification_days": 30,
+    "emergency_hospitalization_notification_hours": 24
+  },
+  "exclusions": [
+    "Intentional self-injury or suicide",
+    "Influence of intoxicating liquor or drugs",
+    "Participation in hazardous or adventure sports",
+    "Breach of law with criminal intent",
+    "War or nuclear radiation"
+  ],
+  "fraud_checks": {
+    "investigation_required_days": 30,
+    "claim_settlement_deadline_days": 30,
+    "max_consultation_fee": 500,
+    "max_cbc_test_cost": 400,
+    "max_ambulance_charge": 2000
+  }
+}

@@ -1,0 +1,17 @@
+# Python (Backend)
+venv/
+__pycache__/
+*.pyc
+.env
+mediaaudit.db
+
+# Node.js (Frontend)
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+.bolt/
+
+# System
+.DS_Store
+Thumbs.db

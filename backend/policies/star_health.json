@@ -1,0 +1,14 @@
+{
+  "provider_name": "Star Health Insurance",
+  "plan_name": "Family Optima",
+  "limits": {
+    "room_rent_limit": 5000,
+    "icu_limit": 10000,
+    "maternity_waiting_months": 24
+  },
+  "exclusions": ["Cosmetic Surgery", "Weight Loss", "Intentional Self Injury"],
+  "fraud_checks": {
+    "max_cbc_cost": 800,
+    "max_consultation_fee": 1500
+  }
+}
