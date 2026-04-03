@@ -35,7 +35,7 @@ else:
 origins = [
     "http://localhost:5173",
     "https://medi-audit.vercel.app", # Add your main Vercel link here
-    "https://medi-audit-git-main-hky20042003s-projects.vercel.app", # Add the specific preview link if needed
+    "https://medi-audit-pa9vbx2c1-hky20042003-8238s-projects.vercel.app", # Add the specific preview link if needed
 ]
 # Allow React Frontend (CORS)
 app.add_middleware(
