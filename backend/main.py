@@ -33,7 +33,10 @@ else:
 # Allow React Frontend (CORS)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"], # React Vite port
+    allow_origins=[
+        "http://localhost:5173",
+        "https://medi-audit-bqh6q3b56-hky20042003-8238s-projects.vercel.app" # Your Vercel URL from the screenshot
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
