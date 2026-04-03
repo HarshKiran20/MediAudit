@@ -30,13 +30,17 @@ if not api_key:
     print("❌ ERROR: GROQ_API_KEY not found in .env file!")
 else:
     configure_groq(api_key)
+
+# 1. Define the allowed origins exactly as they appear in the browser
+origins = [
+    "http://localhost:5173",
+    "https://medi-audit.vercel.app", # Add your main Vercel link here
+    "https://medi-audit-git-main-hky20042003s-projects.vercel.app", # Add the specific preview link if needed
+]
 # Allow React Frontend (CORS)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://medi-audit-bqh6q3b56-hky20042003-8238s-projects.vercel.app" # Your Vercel URL from the screenshot
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
