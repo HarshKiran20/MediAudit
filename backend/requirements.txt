@@ -1,8 +1,6 @@
-streamlit
+fastapi
+uvicorn
+python-multipart
 groq
-pandas
-python-dotenv
-Pillow
-
-# PDF page rendering (converts PDF pages to images for Groq Vision)
-pypdfium2
+sqlalchemy
+psycopg2-binary
