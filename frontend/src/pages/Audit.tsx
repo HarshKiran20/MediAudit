@@ -302,7 +302,15 @@ const Audit = () => {
 
               <div className="flex gap-6">
                 <button onClick={() => setCurrentStep(1)} className="flex-1 bg-white/5 border border-white/10 hover:bg-white/10 text-white py-5 rounded-2xl font-bold text-lg transition-all">New Audit</button>
-                <button onClick={() => window.open(`http://localhost:8000/audit/download/${auditId}`, '_blank')} className="flex-1 bg-teal hover:bg-teal/90 text-navy py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-teal/30">Download PDF Report</button>
+                <button 
+                  onClick={() => {
+                    const backendUrl = "https://mediaudit-api.onrender.com"; 
+                    window.open(`${backendUrl}/audit/download/${auditId}`, '_blank');
+                  }} 
+                  className="flex-1 bg-teal hover:bg-teal/90 text-navy py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-teal/30"
+                >
+                  Download PDF Report
+                </button>
               </div>
             </div>
           )}
