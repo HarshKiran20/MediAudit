@@ -78,4 +78,4 @@ def generate_pdf(data):
     pdf.set_font('helvetica', '', 10)
     pdf.multi_cell(0, 6, eligibility) # Using the cleaned version here
 
-    return bytes(pdf.output())
+    return pdf.output(dest='S').encode('latin-1')
