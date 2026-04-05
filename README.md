@@ -54,30 +54,32 @@ The system follows a **Distributed Decoupled Architecture**:
 
 ### 📂 Directory Structure
 
+```text
 MediAudit/
-├── backend/                # FastAPI Application
-│   ├── main.py             # API Entry point & CORS configuration
-│   ├── models.py           # SQLAlchemy Database models
-│   ├── database.py         # PostgreSQL connection setup
+├── backend/                # FastAPI Application (Python)
+│   ├── main.py             # Entry point: API routes & CORS setup
+│   ├── models.py           # SQLAlchemy Database schemas
+│   ├── database.py         # PostgreSQL connection logic
 │   ├── schemas.py          # Pydantic data validation
-│   ├── processors/         # Core AI & Document Logic
+│   ├── processors/         # Core AI & Logic Engines
 │   │   ├── ocr_engine.py   # Text extraction from images/PDFs
-│   │   └── report_gen.py   # FPDF logic for PDF generation
+│   │   └── report_gen.py   # PDF generation logic (FPDF)
 │   ├── policies/           # Knowledge base for insurance rules
-│   └── requirements.txt    # Python dependencies (FastAPI, Groq, FPDF)
-├── frontend/               # React + Vite Application
+│   ├── .env                # Secrets (GROQ_API_KEY, DATABASE_URL)
+│   └── requirements.txt    # Backend dependencies
+├── frontend/               # React + Vite Application (TypeScript)
 │   ├── src/
-│   │   ├── api/            # Axios client and service definitions
-│   │   ├── components/     # Reusable UI components (Navbar, Footer)
+│   │   ├── api/            # Axios services & API client
+│   │   ├── components/     # Reusable UI (Navbar, Progress Bar)
 │   │   ├── pages/          # Main views (Audit.tsx, History.tsx)
-│   │   └── assets/         # Global styles and images
+│   │   └── assets/         # Global styles & icons
 │   ├── package.json        # Frontend dependencies
-│   └── vite.config.ts      # Vite & Build configuration
+│   └── vite.config.ts      # Vite build configuration
 ├── data/                   # Sample medical bills for testing
-├── screenshots/            # UI previews for README
+├── screenshots/            # UI previews for documentation
 └── README.md               # Project documentation
 
-
+```
 ### Installation
 
 1. **Clone the repository**
@@ -85,19 +87,31 @@ MediAudit/
    git clone [https://github.com/HarshKiran20/MediAudit.git](https://github.com/HarshKiran20/MediAudit.git)
    cd MediAudit
 
-2. **Setup Backend **
+2. **Setup Backend**
+   ```
+    # Navigate to backend directory
+   cd backend
 
-  cd backend
-  pip install -r requirements.txt
-  # Add your .env variables (GROQ_API_KEY, DATABASE_URL)
-  uvicorn main:app --reload
+   # Create a virtual environment (Optional but recommended)
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+   # Install dependencies
+   pip install -r requirements.txt
+
+   # Create a .env file and add your credentials
+   # GROQ_API_KEY=your_key_here
+   # DATABASE_URL=your_postgres_url_here
+
+   # Start the FastAPI server
+   uvicorn main:app --reload
 
 3. ** Setup Frontend **
-
+```
    cd ../frontend
    npm install
    npm run dev
-
+```
 
 Screenshots:
 
