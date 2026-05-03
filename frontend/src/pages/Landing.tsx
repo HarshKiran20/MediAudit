@@ -133,7 +133,7 @@ const Home = () => {
 
         <div className="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-white/5 text-center">
           <p className="text-white/20 text-[10px] uppercase tracking-[0.2em]">
-            Developed by Harsh Kiran |
+            Developed by Harsh Kiran | Harsh Singh | Kuldeep Chaurasia
           </p>
         </div>
       </footer>
