@@ -82,10 +82,10 @@ const Home = () => {
           
           {/* Developer Bio */}
           <div className="space-y-4">
-            <h4 className="text-teal font-bold uppercase tracking-widest text-xs">The Developers</h4>
-            <h3 className="text-2xl font-bold text-white">Harsh Singh ,Kuldeep Chaurasia, Harsh Kiran</h3>
+            <h4 className="text-teal font-bold uppercase tracking-widest text-xs">The Developer</h4>
+            <h3 className="text-2xl font-bold text-white">Harsh Kiran</h3>
             <p className="text-white/40 text-sm leading-relaxed">
-              Machine Learning Engineers <br/>
+              Machine Learning Engineer <br/>
               B.Tech CSE Specialization in (Machine Learning) from <br/>
               <span className="text-white/60">Gautam Buddha University, Greater Noida.</span>
             </p>
@@ -133,7 +133,7 @@ const Home = () => {
 
         <div className="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-white/5 text-center">
           <p className="text-white/20 text-[10px] uppercase tracking-[0.2em]">
-            Developed by Harsh Kiran | Harsh Singh | Kuldeep Chaurasia
+            Developed by Harsh Kiran
           </p>
         </div>
       </footer>
